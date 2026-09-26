@@ -1,9 +1,13 @@
-<?php
-// Avion Scales Main Template
-get_header();
-?>
-<main id="primary" class="site-main">
-    <h1>Avion Scales Agency</h1>
+<?php get_header(); ?>
+<main class="container section">
+    <h1><?php bloginfo('name'); ?></h1>
+    <?php
+    if (have_posts()) {
+        while (have_posts()) {
+            the_post();
+            the_content();
+        }
+    }
+    ?>
 </main>
-<?php
-get_footer();
+<?php get_footer(); ?>
