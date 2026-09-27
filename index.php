@@ -1,8 +1,9 @@
 <?php
 get_header();
-if ( have_posts() ) :
-    while ( have_posts() ) : the_post();
-        the_content();
-    endwhile;
-endif;
+?>
+<main style="padding: 4rem; text-align: center; color: #fff;">
+    <h1>Avion Scales Agency</h1>
+    <p>Theme loaded successfully.</p>
+</main>
+<?php
 get_footer();

@@ -1,106 +1,14 @@
 /*
-Theme Name: Avion Scales
-Description: Custom Premium Dark Agency Theme
-Version: 1.1.0
+Theme Name: Avion Scales Agency
+Theme URI: https://avionscales.co.za
+Author: Avion Scales
+Description: Dark mode obsidian glassmorphism custom agency theme.
+Version: 1.0.0
 */
 
-:root {
-  --bg-dark: #0B0F17;
-  --bg-card: rgba(18, 24, 38, 0.7);
-  --border-card: rgba(255, 255, 255, 0.08);
-  --border-hover: rgba(59, 130, 246, 0.4);
-  --primary-blue: #3B82F6;
-  --accent-cyan: #06B6D4;
-  --text-main: #F8FAFC;
-  --text-muted: #94A3B8;
-  --glow-shadow: 0 0 25px rgba(59, 130, 246, 0.15);
-}
-
 body {
-  background-color: var(--bg-dark);
-  color: var(--text-main);
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-/* Header & Nav */
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 5%;
-  background: rgba(11, 15, 23, 0.8);
-  backdrop-filter: blur(12px);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  border-bottom: 1px solid var(--border-card);
-}
-
-.nav-logo-link {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-  color: var(--text-main);
-  font-weight: 700;
-  font-size: 1.25rem;
-}
-
-.nav-logo-img {
-  height: 38px;
-  width: auto;
-  object-fit: contain;
-}
-
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links a {
-  color: var(--text-muted);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: var(--primary-blue);
-}
-
-/* Glassmorphic Cards & Glow Effects */
-.card-glass {
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
-  border-radius: 16px;
-  backdrop-filter: blur(16px);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card-glass:hover {
-  border-color: var(--border-hover);
-  box-shadow: var(--glow-shadow);
-  transform: translateY(-4px);
-}
-
-/* Animated Chart Indicator */
-.live-dot {
-  width: 8px;
-  height: 8px;
-  background-color: #22C55E;
-  border-radius: 50%;
-  display: inline-block;
-  box-shadow: 0 0 10px #22C55E;
-  animation: pulse-glow 2s infinite;
-}
-
-@keyframes pulse-glow {
-  0% { transform: scale(0.95); opacity: 0.8; }
-  50% { transform: scale(1.2); opacity: 1; }
-  100% { transform: scale(0.95); opacity: 0.8; }
+    background-color: #0B0F17;
+    color: #F8FAFC;
+    margin: 0;
+    padding: 0;
 }
