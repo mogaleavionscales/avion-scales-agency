@@ -1,115 +1,40 @@
 <?php get_header(); ?>
-<main>
-    <section class="hero">
-        <div class="container hero-grid">
-            <div>
-                <p class="eyebrow">WE BUILD. WE SCALE.</p>
-                <h1>Grow your business with a high-converting website</h1>
-                <p class="hero-copy">Avion Scales designs modern, custom WordPress sites and digital marketing campaigns that make local businesses look credible and capture real leads.</p>
-                <a class="button" href="#contact">Start Your Project</a>
-            </div>
-            <div class="growth-card">
-                <div class="card-top">
-                    <span>Performance Overview</span>
-                    <span class="live">• LIVE</span>
-                </div>
-                <div class="chart-wrap">
-                    <span class="bar bar-one"></span>
-                    <span class="bar bar-two"></span>
-                    <span class="bar bar-three"></span>
-                </div>
-                <div class="logo-chip">
-                    <?php
-                    if (has_custom_logo()) {
-                        the_custom_logo();
-                    }
-                    ?>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="services" class="section section-soft">
-        <div class="container">
-            <div class="section-heading center">
-                <p class="eyebrow">WHAT WE DO</p>
-                <h2>Websites & ads built to drive revenue</h2>
-                <p>We give your business a clear online presence that builds trust, drives customer inquiries, and turns website visits into conversions.</p>
-            </div>
-            <div class="services">
-                <article class="service-card">
-                    <span class="service-number">01</span>
-                    <h3>High-Impact Web Design</h3>
-                    <p>Custom, mobile-friendly WordPress websites crafted specifically for your industry to showcase your work and convert visitors.</p>
-                </article>
-                <article class="service-card">
-                    <span class="service-number">02</span>
-                    <h3>Targeted Ads & Lead Gen</h3>
-                    <p>Meta and Google ad campaigns optimized to place your services in front of active local customers ready to buy.</p>
-                </article>
-                <article class="service-card">
-                    <span class="service-number">03</span>
-                    <h3>Business Setup & Tech Support</h3>
-                    <p>Domain configuration, custom business email setups, and ongoing technical maintenance so you can focus on running your business.</p>
-                </article>
-            </div>
-        </div>
-    </section>
+<main class="bg-dark-wrapper" style="background-color: #0B0F17; color: #F8FAFC; min-height: 100vh; padding-bottom: 5rem;">
+  
+  <!-- HERO SECTION -->
+  <section class="hero-section" style="padding: 5rem 5%; max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+    <div class="hero-content">
+      <span style="color: #3B82F6; font-weight: 700; letter-spacing: 1.5px; font-size: 0.875rem; text-transform: uppercase;">WE BUILD. WE SCALE.</span>
+      <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin: 1rem 0; color: #F8FAFC;">
+        Grow your business with a high-converting website
+      </h1>
+      <p style="color: #94A3B8; font-size: 1.125rem; line-height: 1.6; margin-bottom: 2rem;">
+        Avion Scales designs modern, custom WordPress sites and digital marketing campaigns that make local businesses look credible and capture real leads.
+      </p>
+      <a href="#contact" style="display: inline-block; background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%); color: #FFFFFF; font-weight: 600; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4);">
+        Start Your Project
+      </a>
+    </div>
 
-    <section id="packages" class="section">
-        <div class="container">
-            <div class="section-heading center">
-                <p class="eyebrow">PACKAGES</p>
-                <h2>Three simple ways to work with us</h2>
-                <p>Choose the level of growth your business needs today, from a straightforward launch setup to complete web and marketing management.</p>
-            </div>
-            <div class="packages">
-                <article class="package-card">
-                    <span class="package-kicker">STARTER</span>
-                    <h3>Launch Package</h3>
-                    <p>A fast, professional single-page web presence designed for high conversion.</p>
-                    <ul>
-                        <li>Custom single-page responsive layout</li>
-                        <li>Lead capture form & WhatsApp button</li>
-                        <li>Basic SEO & Google Maps integration</li>
-                    </ul>
-                </article>
-                <article class="package-card featured">
-                    <span class="package-kicker">RECOMMENDED</span>
-                    <h3>Growth Package</h3>
-                    <p>A complete multi-page site paired with initial ad campaign setup for maximum reach.</p>
-                    <ul>
-                        <li>Up to 5 custom website pages</li>
-                        <li>Google Ads or Meta Ads campaign setup</li>
-                        <li>Professional business email configuration</li>
-                    </ul>
-                </article>
-                <article class="package-card">
-                    <span class="package-kicker">CUSTOM</span>
-                    <h3>Scale Package</h3>
-                    <p>Full web design, continuous ad management, and dedicated maintenance support.</p>
-                    <ul>
-                        <li>Full custom web design & development</li>
-                        <li>Ongoing ad optimization & monthly reporting</li>
-                        <li>Website maintenance, updates & backups</li>
-                    </ul>
-                </article>
-            </div>
-        </div>
-    </section>
+    <!-- ANIMATED HERO CHART CARD -->
+    <div class="card-glass" style="background: rgba(18, 24, 38, 0.7); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 2rem; backdrop-filter: blur(16px); position: relative;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+        <h3 style="margin: 0; font-size: 1.1rem; color: #F8FAFC;">Performance Overview</h3>
+        <span style="display: flex; align-items: center; gap: 6px; font-size: 0.85rem; color: #22C55E; font-weight: 600;">
+          <span class="live-dot"></span> • LIVE
+        </span>
+      </div>
 
-    <section id="contact" class="section section-soft">
-        <div class="container contact">
-            <div class="contact-copy">
-                <p class="eyebrow">YOUR NEXT STEP</p>
-                <h2>Let’s build something great together.</h2>
-                <p>Tell us about your business goals, and we'll map out the ideal strategy to get you there.</p>
-                <p><strong>Add your details to get started:</strong></p>
-            </div>
-            <div>
-                <?php echo do_shortcode('[avion_lead_form]'); ?>
-            </div>
-        </div>
-    </section>
+      <!-- CHART SVG INTEGRATION -->
+      <div style="height: 180px; display: flex; align-items: flex-end; gap: 1rem; padding-top: 1rem;">
+        <div style="flex: 1; background: rgba(59, 130, 246, 0.2); height: 40%; border-radius: 6px;"></div>
+        <div style="flex: 1; background: rgba(59, 130, 246, 0.4); height: 65%; border-radius: 6px;"></div>
+        <div style="flex: 1; background: linear-gradient(180deg, #3B82F6 0%, #1D4ED8 100%); height: 90%; border-radius: 6px; box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);"></div>
+      </div>
+    </div>
+  </section>
+
 </main>
+
 <?php get_footer(); ?>
