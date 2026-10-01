@@ -1,14 +1,127 @@
 /*
-Theme Name: Avion Scales Agency
-Theme URI: https://avionscales.co.za
-Author: Avion Scales
-Description: Dark mode obsidian glassmorphism custom agency theme.
+Theme Name: Avion Scales
+Author: Avion Scales Agency
+Description: Light, professional agency homepage theme with animated CSS growth chart background and integrated lead form.
 Version: 1.0.0
 */
 
+:root {
+    --bg-main: #f8fafc;
+    --card-bg: #ffffff;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --accent-blue: #2563eb;
+    --accent-hover: #1d4ed8;
+    --border-color: #e2e8f0;
+}
+
 body {
-    background-color: #0B0F17;
-    color: #F8FAFC;
     margin: 0;
     padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.hero-section {
+    position: relative;
+    padding: 6rem 2rem;
+    text-align: center;
+    background: linear-gradient(180deg, #ffffff 0%, var(--bg-main) 100%);
+    overflow: hidden;
+}
+
+.chart-bg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1000px;
+    height: 250px;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+.chart-bar {
+    animation: growBar 2s ease-out forwards;
+    transform-origin: bottom;
+}
+
+@keyframes growBar {
+    from { transform: scaleY(0); }
+    to { transform: scaleY(1); }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary {
+    display: inline-block;
+    background: var(--accent-blue);
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: var(--accent-hover);
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.site-footer {
+    background: #ffffff;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
 }
